@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #17171C;
+    color: #ddd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+/* Navbar */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ocultar el icono en pantallas grandes */
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.li {
+    margin-right: 20px;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar el icono en pantallas pequeñas */
+    }
+    .nav {
+        display: none; /* Ocultar la lista en pantallas pequeñas */
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+    }
+    .nav.active {
+        display: flex; /* Mostrar la lista cuando se activa el menú */
+    }
+}
+
+/*  HEADER */
+
+header {
+    margin-top: 30px;
+    height: 100vh;
+    width: auto;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura del viewport */
+}
+
+
+.content {
+    padding: 40px; /* Agrega espacio alrededor de los elementos */
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content {
+    text-align: start; /* Centra el contenido */
+    max-width: 600px; /* Establece un ancho máximo para el contenido */ 
+}
+
+.h5 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.h1 {
+    font-weight: 300;
+    font-size: 50px;
+    color: #f5fd83;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .h5 {
+        font-size: 20px;
+    }
+    
+    
+    .h1 {
+        font-size: 30px;
+        color: #f5fd83;
+    }
+    
+    .h2 {
+        font-size: 20px;
+    }
+    
+    .content-img {
+        margin-top: 100px;
+    }
+
+    .img {
+        margin-right: 0; /* Eliminar el margen entre la imagen y el contenido en pantallas pequeñas */
+    }
+    
+    .content {
+        text-align: center; /* Centrar el contenido en pantallas pequeñas */
+    }
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+}
+.content-skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+}
+.content-icons{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    padding: 20px;
+}
+.icon {
+    height: 50px;
+}
+
+.express {
+    background-color: #fff;
+    border-radius: 10%;
+}
+.skills {
+    padding: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*  CARDS */
+
+main {
+    height: 70vh;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    background-color: #292930;
+    flex-direction: column;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.content-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: #ddd solid 0.1em;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.p {
+    font-size: 1rem;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        height: auto;
+    }
+    
+    .container-main {
+        margin-top: 60px;
+        height: auto;
+    }
+    .card {
+        max-height: 400px;
+        width: calc(50% - 60px);
+    }
+    .content-main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+section {
+    margin-top: 90px;
+}
+.container-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .text-form {
+    display: flex;
+    align-items: center; /* Alinea los elementos en la parte superior */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    padding: 20px;
+    height: 60px;
+}
+.contact {
+    padding: 10px;
+}
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .form-group textarea {
+    height: 150px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #292930;
+  }
+
+  .footer .social-icons {
+    font-size: 24px;
+  }
+
+  .footer .social-icons a {
+    color: #333;
+    margin: 0 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+        margin-top: 30px;
+    }
+    .container-section {
+        align-items: center;
+         margin-top: 30px;
+      padding: 10px;
+      flex-direction: column;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      font-size: 14px;
+    }
+    .footer .social-icons {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      font-size: 12px;
+    }
+    .footer .social-icons {
+      font-size: 16px;
+    }
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Por defecto, ocultar el mensaje */
+  }
