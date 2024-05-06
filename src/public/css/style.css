@@ -184,13 +184,13 @@ header {
 /*  CARDS */
 
 main {
-    height: 70vh;
+    height: 80vh;
 }
 
 .container-main {
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
     align-items: center;
     background-color: #292930;
     flex-direction: column;
@@ -215,9 +215,11 @@ main {
     margin-bottom: 20px;
     box-sizing: border-box;
     text-align: center;
-    border: #ddd solid 0.1em;
+    border: #949292 solid 0.1em;
     border-radius: 5%;
     overflow: hidden;
+    padding: 20px;
+    background-color: #111111;
 }
 
 .card img {
@@ -242,7 +244,16 @@ main {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1rem;
+    margin: 10px;
 }
+
+.yellow {
+    padding: 5px 10px;
+    background-color: #f5fd83;
+    color: #111111;
+    cursor:auto;
+}
+
 
 @media screen and (max-width: 768px) {
 
