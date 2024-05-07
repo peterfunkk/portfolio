@@ -267,17 +267,29 @@ main {
     }
     .card {
         max-height: 400px;
-        width: calc(50% - 60px);
+        width: calc(60% - 40px);
     }
     .content-main {
         flex-direction: column;
         align-items: center;
     }
+    .h3 {
+        font-size: 1.2rem;
+    }
+    .p {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .card {
-        width: calc(50% - 20px);
+        width: calc(70% - 20px);
+    }
+    .h3 {
+        font-size: 1rem;
+    }
+    .p {
+        font-size: 0.7rem;
     }
 }
 
