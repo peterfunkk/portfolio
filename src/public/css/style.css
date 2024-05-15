@@ -113,6 +113,10 @@ header {
     font-size: 30px;
 }
 
+.p2 {
+    font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
     .container-header {
         flex-direction: column;
