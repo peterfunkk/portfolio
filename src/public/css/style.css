@@ -188,13 +188,13 @@ header {
 /*  CARDS */
 
 main {
-    height: 80vh;
+    height: 100vh;
 }
 
 .container-main {
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
     background-color: #292930;
     flex-direction: column;
@@ -209,7 +209,7 @@ main {
 .content-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1200px;
     width: 100%;
 }
